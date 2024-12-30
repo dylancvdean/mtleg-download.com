@@ -7,5 +7,5 @@ const repoName = 'mtleg-download.com';
 
 export default defineConfig({
   plugins: [react(), ghPages()],
-  base: `/${repoName}/`, // Set this to your GitHub repo name
+  base: `/`,
 });
