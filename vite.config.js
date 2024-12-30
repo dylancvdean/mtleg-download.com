@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { ghPages } from 'vite-plugin-gh-pages';
 
-// https://vite.dev/config/
+// Update your repository name
+const repoName = 'mtleg-download.com';
+
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [react(), ghPages()],
+  base: `/${repoName}/`, // Set this to your GitHub repo name
+});
